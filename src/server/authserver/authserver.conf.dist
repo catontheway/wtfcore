@@ -158,7 +158,7 @@ LogFileLevel = 0
 #        Example:     "13 11 9 5" - (Enabled)
 #        Default:     ""          - (Disabled)
 
-LogColors = ""
+LogColors = "13 11 7 9 5"
 
 #
 #    EnableLogDB
@@ -243,7 +243,7 @@ WrongPass.BanType = 0
 #                                                                           Unix/Linux)
 #        Default:     "127.0.0.1;3306;trinity;trinity;auth"
 
-LoginDatabaseInfo = "127.0.0.1;3306;trinity;trinity;auth"
+LoginDatabaseInfo = "127.0.0.1;3306;root;root;auth"
 
 #
 #    LoginDatabase.WorkerThreads
