@@ -575,7 +575,7 @@ void Player::UpdateBlockPercentage()
         value += GetRatingBonusValue(CR_BLOCK);
         value = value < 0.0f ? 0.0f : value;
     }
-    SetStatFloatValue(PLAYER_BLOCK_PERCENTAGE, value);
+    SetStatFloatValue(PLAYER_BLOCK_PERCENTAGE, value>65.0f?65.0f:value);  
 }
 
 void Player::UpdateCritPercentage(WeaponAttackType attType)
@@ -700,7 +700,7 @@ void Player::UpdateParryPercentage()
         value = nondiminishing + diminishing * parry_cap[pclass] / (diminishing + parry_cap[pclass] * m_diminishing_k[pclass]);
         value = value < 0.0f ? 0.0f : value;
     }
-    SetStatFloatValue(PLAYER_PARRY_PERCENTAGE, value);
+    SetStatFloatValue(PLAYER_PARRY_PERCENTAGE, value>65.0f?65.0f:value);  
 }
 
 void Player::UpdateDodgePercentage()
@@ -734,7 +734,7 @@ void Player::UpdateDodgePercentage()
     float value = nondiminishing + (diminishing * dodge_cap[pclass] / (diminishing + dodge_cap[pclass] * m_diminishing_k[pclass]));
 
     value = value < 0.0f ? 0.0f : value;
-    SetStatFloatValue(PLAYER_DODGE_PERCENTAGE, value);
+    SetStatFloatValue(PLAYER_DODGE_PERCENTAGE, value>65.0f?65.0f:value);   
 }
 
 void Player::UpdateSpellCritChance(uint32 school)
