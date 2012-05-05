@@ -31,6 +31,8 @@ set(scripts_STAT_SRCS
   Custom/event_npc.cpp
   Custom/npc_vip.cpp  
   Custom/levelnpc.cpp    
+  Custom/npc_proff.cpp
+  Custom/npc_ultimate.cpp
 )
 
 message("  -> Prepared: Custom")

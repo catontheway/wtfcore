@@ -63,12 +63,13 @@ void AddSC_npc_legion_master();
 void AddSC_event_npc();
 //VIP NPC
 void AddSC_npc_vip();
-//Lottery
-//void AddSC_npc_lottery();
-//Level NPC
+
 void AddSC_levelnpc();
-// Killstreak PvP System
-//void AddSC_PVP_System();
+void AddSC_npc_proff();
+ //Morpher
+void AddSC_npc_ultimate();
+
+
 
 // spells
 void AddSC_deathknight_spell_scripts();
@@ -1351,5 +1352,7 @@ void AddCustomScripts()
     AddSC_npc_mount();		
     AddSC_ArgentTournament();
     AddSC_dalaran_squirrel();
+    AddSC_npc_proff();
+    AddSC_npc_ultimate();
 #endif
 }
